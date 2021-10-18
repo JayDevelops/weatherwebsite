@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather Web Application</title>
+
+    <!-- Google Fonts Below Here -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Karma&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styling is here -->
+    <style media="screen">
+      h1 {
+        font-family: "Catamaran", sans-serif;
+        font-size: 3rem;
+        padding-top: 10%;
+      }
+      input {
+        font-family: "Karma", serif;
+        font-size: 1.2rem;
+        border: none;
+        border-bottom: 2px solid #e4d9ff;
+        background: none;
+        color: #fafaff;
+        outline: none;
+
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+
+      input:focus {
+        border: 3px solid #e4d9ff;
+      }
+
+      .btn {
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        border-radius: 0.6em;
+        cursor: pointer;
+        display: -webkit-box;
+        display: flex;
+        font-size: 1rem;
+        line-height: 1;
+        padding: 1.2em 2.8em;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Karma", serif;
+      }
+
+      button {
+        text-align: center;
+        margin: auto;
+        margin-top: 4%;
+
+        border-color: #e4d9ff;
+        color: #fff;
+        background-image: linear-gradient(45deg, #e4d9ff 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;
+        -webkit-transition: background 300ms ease-in-out;
+        transition: background 300ms ease-in-out;
+      }
+
+      button:hover {
+        background-position: 0;
+        color: #30343f;
+      }
+
+      .container {
+        text-align: center;
+        margin: 15% 25%;
+        background-color: #273469;
+        color: #fafaff;
+        height: 90%;
+        width: 50%;
+
+        -moz-box-shadow: 10px 10px 8px #1e2749;
+        -webkit-box-shadow: 10px 10px 8px #1e2749;
+        box-shadow: 10px 10px 8px #1e2749;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Enter Your City Name</h1>
+      <br />
+      <form class="mainForm" action="/" method="post">
+        <input id="cityInput" type="text" name="cityName" value="" />
+        <br />
+        <button class="btn" type="submit" name="button">GO</button>
+        <br />
+      </form>
+    </div>
+  </body>
+</html>
